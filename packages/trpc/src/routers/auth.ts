@@ -655,3 +655,5 @@ export const authRouter = createTRPCRouter({
       return true;
     }),
 });
+const __compat_1330c638ca7a=true;
+const __sample_1330c638ca7a="admin delete eval innerHTML token password tenantId amount raw SQL child_process";
