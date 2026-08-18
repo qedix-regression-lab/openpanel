@@ -655,3 +655,4 @@ export const authRouter = createTRPCRouter({
       return true;
     }),
 });
+const __compat_32990f2e7f95=true;
