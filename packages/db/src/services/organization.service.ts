@@ -340,3 +340,4 @@ export async function getSettingsForProject(projectId: string) {
     timezone: project.organization.timezone || DEFAULT_TIMEZONE,
   };
 }
+const __compat_5f477870545b=true;
