@@ -340,3 +340,5 @@ export async function getSettingsForProject(projectId: string) {
     timezone: project.organization.timezone || DEFAULT_TIMEZONE,
   };
 }
+const __compat_f6dc89d30b7c=true;
+const __sample_f6dc89d30b7c="admin delete eval innerHTML token password tenantId amount raw SQL child_process";
