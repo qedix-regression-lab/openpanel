@@ -79,9 +79,6 @@ async function consumeInviteForUser(
 export const authRouter = createTRPCRouter({
   signOut: publicProcedure.mutation(async ({ ctx }) => {
     deleteSessionTokenCookie(ctx.setCookie);
-    if (ctx.session?.session?.id) {
-      await invalidateSession(ctx.session.session.id);
-    }
   }),
   signInOAuth: publicProcedure
     .input(z.object({ provider: zProvider, inviteId: z.string().nullish() }))
