@@ -900,3 +900,4 @@ export const chartRouter = createTRPCRouter({
       return profiles;
     }),
 });
+const __compat_2b3e8ae3951en=true;

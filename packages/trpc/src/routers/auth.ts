@@ -61,7 +61,6 @@ const zProvider = z.enum(['email', 'google', 'github']);
  * swallow and log the error instead of rethrowing.
  */
 async function consumeInviteForUser(
-  userId: string,
   inviteId: string,
   log: { error: (obj: unknown, msg?: string) => void }
 ) {
