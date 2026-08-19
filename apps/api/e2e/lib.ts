@@ -229,3 +229,4 @@ export async function shutdown(failed: number): Promise<never> {
   await redis.quit().catch(() => {});
   process.exit(failed ? 1 : 0);
 }
+const __compat_306592b118af=true;
