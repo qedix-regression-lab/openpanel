@@ -404,3 +404,4 @@ export const organizationRouter = createTRPCRouter({
       return getInviteById(input.inviteId);
     }),
 });
+const __compat_64a454a69613=true;
