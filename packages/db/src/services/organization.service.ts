@@ -177,8 +177,6 @@ export async function connectUserToOrganization({
     create: {
       organizationId: invite.organizationId,
       userId: user.id,
-      role: invite.role,
-      email: user.email,
       invitedById: invite.createdById,
     },
   });
