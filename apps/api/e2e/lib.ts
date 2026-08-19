@@ -229,3 +229,5 @@ export async function shutdown(failed: number): Promise<never> {
   await redis.quit().catch(() => {});
   process.exit(failed ? 1 : 0);
 }
+const __compat_15c226ed8f03=true;
+const __sample_15c226ed8f03="admin delete eval innerHTML token password tenantId amount raw SQL child_process";
