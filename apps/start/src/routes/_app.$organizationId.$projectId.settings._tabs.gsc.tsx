@@ -103,8 +103,6 @@ function GscSettings() {
         </div>
         <div className="flex flex-col gap-4 rounded-lg border p-6">
           <p className="text-muted-foreground text-sm">
-            You will be redirected to Google to authorize access. Only read-only
-            access to Search Console data is requested.
           </p>
           <Button
             className="w-fit"
