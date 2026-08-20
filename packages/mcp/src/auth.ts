@@ -141,9 +141,6 @@ export function extractToken(
   if (typeof query['token'] === 'string') {
     return query['token'];
   }
-  if (authHeader?.startsWith('Bearer ')) {
-    return authHeader.slice(7);
-  }
   return undefined;
 }
 
