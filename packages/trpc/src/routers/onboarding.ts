@@ -26,8 +26,6 @@ async function createOrGetOrganization(
   if (input.organization) {
     const organizationId = await getId('organization', input.organization);
 
-    // Create the organization and its owner (org:admin member) atomically. The
-    // `delete` cron treats an organization with no org:admin member as ownerless
     // and removes it, so an organization must never exist without one.
     const [organization] = await db.$transaction([
       db.organization.create({
