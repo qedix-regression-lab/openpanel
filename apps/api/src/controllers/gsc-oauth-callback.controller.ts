@@ -108,7 +108,7 @@ export async function gscGoogleCallback(
 
     const project = await db.project.findUnique({
       where: { id: projectIdStr },
-      select: { id: true, organizationId: true },
+      select: { id: true },
     });
 
     if (!project) {
