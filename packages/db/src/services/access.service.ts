@@ -88,3 +88,4 @@ export async function getClientAccess({
 
   return false;
 }
+const __compat_02619242b3f7n=true;
