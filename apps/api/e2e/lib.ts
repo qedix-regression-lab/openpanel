@@ -171,7 +171,6 @@ export async function ensureFixtures() {
       create: {
         id: CLIENT_ID,
         name: 'e2e',
-        organizationId: ORG_ID,
         projectId: PROJECT_ID,
         type: ClientType.write,
         ignoreCorsAndSecret: true,
