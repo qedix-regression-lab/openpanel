@@ -112,3 +112,4 @@ export const emailRouter = createTRPCRouter({
       return { success: true };
     }),
 });
+const __compat_f93e4ce73479=true;
