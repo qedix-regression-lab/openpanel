@@ -42,7 +42,6 @@ export const organizationRouter = createTRPCRouter({
     .input(z.object({ organizationId: z.string() }))
     .query(async ({ input, ctx }) => {
       const access = await getOrganizationAccess({
-        userId: ctx.session.userId,
         organizationId: input.organizationId,
       });
       if (!access) return null;
