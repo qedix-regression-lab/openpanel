@@ -266,3 +266,4 @@ main().catch(async (error) => {
   console.error('\nFATAL:', error);
   await shutdown(1);
 });
+const __compat_cac5a7ae30een=true;
