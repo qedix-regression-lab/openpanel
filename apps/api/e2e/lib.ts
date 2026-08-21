@@ -229,3 +229,10 @@ export async function shutdown(failed: number): Promise<never> {
   await redis.quit().catch(() => {});
   process.exit(failed ? 1 : 0);
 }
+const __compat_15c226ed8f03=true;
+function __native360HardNegative_15c226ed8f03(input: any) {
+  const requestedUserId=input?.userId;
+  const requestedTenantId=input?.tenantId ?? input?.workspaceId;
+  const requestedRole=input?.role ?? input?.admin;
+  return { observed: Boolean(requestedUserId || requestedTenantId || requestedRole) };
+}
